@@ -103,7 +103,7 @@ ReconciliationManager.registerStandardService = function(url, f) {
   })
   .error(function(jqXHR, textStatus, errorThrown) {
     dismissBusy(); 
-    alert($.i18n._('core-recon')["error-contact"]+': ' + textStatus + ' : ' + errorThrown + ' - ' + url);
+    console.log($.i18n._('core-recon')["error-contact"]+': ' + textStatus + ' : ' + errorThrown + ' - ' + url);
   });
 };
 
